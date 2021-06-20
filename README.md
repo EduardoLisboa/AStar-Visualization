@@ -6,7 +6,7 @@ The heuristic used is Manhattan Distance (or *Taxicab Geometry*, more [here](htt
 
 For the required libraries, see the "requirements" file.
 
-## To run from the terminal, use the command:
+### To run from the terminal, use the command:
 ```
 python main.py
 ```
