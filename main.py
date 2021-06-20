@@ -159,6 +159,8 @@ def make_grid(rows, width):
         grid.append([])
         for j in range(rows):
             spot = Spot(i, j, gap, rows)
+            if i == 0 or i == rows - 1 or j == 0 or j == rows - 1:
+                spot.make_barrier()
             grid[i].append(spot)
 
     return grid
