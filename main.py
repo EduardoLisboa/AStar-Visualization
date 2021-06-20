@@ -213,29 +213,33 @@ def main(win, width):
             if pygame.mouse.get_pressed()[0]:   # Left click
                 pos = pygame.mouse.get_pos()
                 row, col = get_clicked_pos(pos, ROWS, width)
-                spot = grid[row][col]
-                if not start and spot != end:
-                    start = spot
-                    start.make_start()
 
-                elif not end and spot != start:
-                    end = spot
-                    end.make_end()
-                
-                elif spot != end and spot != start:
-                    spot.make_barrier()
+                if row != 0 and row != ROWS - 1 and col != 0 and col != ROWS - 1:
+                    spot = grid[row][col]
+                    if not start and spot != end:
+                        start = spot
+                        start.make_start()
+
+                    elif not end and spot != start:
+                        end = spot
+                        end.make_end()
+                    
+                    elif spot != end and spot != start:
+                        spot.make_barrier()
             
             elif pygame.mouse.get_pressed()[2]: # Right click
                 pos = pygame.mouse.get_pos()
                 row, col = get_clicked_pos(pos, ROWS, width)
-                spot = grid[row][col]
-                spot.reset()
 
-                if spot == start:
-                    start = None
+                if row != 0 and row != ROWS - 1 and col != 0 and col != ROWS - 1:
+                    spot = grid[row][col]
+                    spot.reset()
 
-                if spot == end:
-                    end = None
+                    if spot == start:
+                        start = None
+
+                    if spot == end:
+                        end = None
             
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE and start and end:
