@@ -1,4 +1,4 @@
-# A* Visualization Algorithm
+# A* Algorithm Visualization
 
 An algorithm to visualize [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) search algorithm working
 
