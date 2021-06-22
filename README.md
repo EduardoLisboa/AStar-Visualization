@@ -4,6 +4,8 @@ An algorithm to visualize [A*](https://en.wikipedia.org/wiki/A*_search_algorithm
 
 The heuristic used is Manhattan Distance (or *Taxicab Geometry*, more [here](https://en.wikipedia.org/wiki/Taxicab_geometry) and [here](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)).
 
+For the version with diagonal movement included, check [here](https://github.com/EduardoLisboa/AStar-Visualization/tree/diagonal_movement).
+
 For the required libraries, see the [requirements](../master/requirements.txt) file.
 
 For a similar visualizator, for the Dijkstra algorithm, go [here](https://github.com/EduardoLisboa/Dijsktra-Visualization).
