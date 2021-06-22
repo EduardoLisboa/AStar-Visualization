@@ -1,10 +1,12 @@
 # A* Algorithm Visualization
 
-An algorithm to visualize [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) search algorithm working
+An algorithm to visualize [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) search algorithm working.
 
-The heuristic used is Manhattan Distance (or *Taxicab Geometry*, more [here](https://en.wikipedia.org/wiki/Taxicab_geometry) and [here](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html))
+The heuristic used is Manhattan Distance (or *Taxicab Geometry*, more [here](https://en.wikipedia.org/wiki/Taxicab_geometry) and [here](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)).
 
 For the required libraries, see the [requirements](../master/requirements.txt) file.
+
+For a similar visualizator, go [here](https://github.com/EduardoLisboa/Dijsktra-Visualization)
 
 ### To run from the terminal, use the command:
 * Windows:
