@@ -2,7 +2,9 @@
 
 An algorithm to visualize [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) search algorithm working.
 
-The heuristic used is Manhattan Distance (or *Taxicab Geometry*, more [here](https://en.wikipedia.org/wiki/Taxicab_geometry) and [here](https://xlinux.nist.gov/dads/HTML/manhattanDistance.html)).
+The heuristic used is similar to the [Pythagorean Theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem).
+
+Updated to include diagonal movement.
 
 For the required libraries, see the [requirements](../master/requirements.txt) file.
 
