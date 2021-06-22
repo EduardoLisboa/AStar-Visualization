@@ -6,7 +6,7 @@ The heuristic used is Manhattan Distance (or *Taxicab Geometry*, more [here](htt
 
 For the required libraries, see the [requirements](../master/requirements.txt) file.
 
-For a similar visualizator, go [here](https://github.com/EduardoLisboa/Dijsktra-Visualization)
+For a similar visualizator, for the Dijkstra algorithm, go [here](https://github.com/EduardoLisboa/Dijsktra-Visualization).
 
 ### To run from the terminal, use the command:
 * Windows:
