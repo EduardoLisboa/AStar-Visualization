@@ -1,11 +1,12 @@
 import pygame
 from random import randint
+from math import sqrt
 from queue import PriorityQueue
 from spot import Spot, WHITE, GREY
 
 WIDTH = HEIGHT = 800
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('A* Path Finding Visualizer')
+pygame.display.set_caption('A* Path Finding Visualizer - Manhattan')
 
 
 def reconstruct_path(came_from, current, draw):
@@ -15,11 +16,11 @@ def reconstruct_path(came_from, current, draw):
         draw()
 
 
-# Heuristic function - Manhattan Distance
+# Heuristic function
 def h(p1, p2):
     x1, y1 = p1
     x2, y2 = p2
-    return abs(x1 - x2) + abs(y1 - y2)
+    return sqrt(abs(x1 - x2) ** 2 + abs(y1 - y2) ** 2)
 
 
 def astar(draw, grid, start, end):
@@ -114,7 +115,7 @@ def get_clicked_pos(pos, rows, width):
 
 
 def main(win, width):
-    ROWS = 50
+    ROWS = 100
     grid = make_grid(ROWS, width)
 
     start = None
@@ -210,7 +211,7 @@ def main(win, width):
                             spot.make_barrier()
                             barriers.append(spot)
 
-                            if len(barriers) >= ROWS ** 2 * 0.3:
+                            if len(barriers) >= ROWS ** 2 * 0.4:
                                 break
 
 
