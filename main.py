@@ -211,7 +211,7 @@ def main(win, width):
                             spot.make_barrier()
                             barriers.append(spot)
 
-                            if len(barriers) >= ROWS ** 2 * 0.4:
+                            if len(barriers) >= ROWS ** 2 * 0.3:
                                 break
 
 
