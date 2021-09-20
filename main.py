@@ -6,7 +6,7 @@ from spot import Spot, WHITE, GREY
 
 WIDTH = HEIGHT = 800
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('A* Path Finding Visualizer')
+pygame.display.set_caption('A* Path Finding Visualizer - Diagonal')
 
 
 def reconstruct_path(came_from, current, draw):
@@ -115,7 +115,7 @@ def get_clicked_pos(pos, rows, width):
 
 
 def main(win, width):
-    ROWS = 50
+    ROWS = 100
     grid = make_grid(ROWS, width)
 
     start = None
